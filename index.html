@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | [chat-app]</title>
+</head>
+<body>
+    <div class="background-left"></div>
+    <main class="main">
+        <div class="phone">
+            <div class="phone__top">
+                <span class="phone__back">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </span>
+                <img src="images/avatar.jpg" class="phone__avatar" />
+                <div class="phone__text">
+                    <h3 class="phone__text--name">Samuel Green</h3>
+                    <p class="phone__text--info">Available to walk</p>
+                </div>
+                <span class="phone__option">
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </span>
+            </div>
+            <div class="phone__body">
+                <div class="phone__receive">
+                    That sounds great. I'd be happy with that.
+                </div>
+                <div class="phone__receive moreMargin">
+                    Could you send over some pictures of your dogs. please?
+                </div>
+                <div class="phone__media">
+                    <img src="./images/dog-image-1.jpg" class="phone__image" />
+                    <img src="./images/dog-image-2.jpg" class="phone__image" />
+                    <img src="./images/dog-image-3.jpg" class="phone__image" />
+                </div>
+                <div class="phone__sent">
+                    Here are a few pictures. She's a happy girl
+                </div>
+                <div class="phone__sent moreMargin">
+                    Can you make it?
+                </div>
+                <div class="phone__receive">
+                    She looks so happy! The time we discussed works. How long shall I take her out far?
+                </div>
+                <div class="booking">
+                    <input type="radio" class="booking__radio"/>
+                    <span class="booking__radio--psuedo"></span>
+                    <p class="booking__walkTime">
+                        30 minute walk
+                    </p>
+                    <span class="booking__amount">$29</span>
+                </div>
+                <div class="booking moreMargin">
+                    <input type="radio" class="booking__radio"/>
+                    <span class="booking__radio--psuedo"></span>
+                    <p class="booking__walkTime">
+                        30 minute walk
+                    </p>
+                    <span class="booking__amount">$29</span>
+                </div>
+                <form class="form">
+                    <input type="text" class="form__input" 
+                    placeholder="Type a message.." />
+                    <button class="form__button">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="word">
+            <h2 class="word__heading">Simple booking</h2>
+            <p class="word__text">
+                Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+                discuss arrangements and make bookings. Once the walk has been completed you can rate 
+                your walker and book again all through the chat.
+            </p>
+        </div>
+    </main>
+    <div class="background-right"></div>
+    <div class="developer">Project from FrontEnd Mentor done by <a href="https://github.com/Ayboss/" target="_blank" class="developer__name">dudeYouHaveNoIdea</a></div>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body> 
+</html>

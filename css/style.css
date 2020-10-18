@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  background-color: hsl(270, 20%, 96%);
+  font-family: "Rubik", sans-serif;
+  /* place-items: center; */
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.background-left {
+  position: absolute;
+  top: 0;
+  left: -15%;
+  width: 40%;
+  height: 600px;
+  border-bottom-right-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+  background-image: linear-gradient(
+    to top right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  z-index: 12;
+}
+.background-right {
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  width: 40%;
+  height: 600px;
+  border-top-right-radius: 1000px;
+  border-top-left-radius: 1000px;
+  background-color: hsl(270, 20%, 93%);
+  z-index: 10;
+}
+.main {
+  display: grid;
+  grid-template-columns: 290px 430px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 100px;
+  position: relative;
+  z-index: 1000;
+}
+.phone {
+  background-color: hsl(270, 20%, 96%);
+  width: 100%;
+  /* height: 600px; */
+  border: 12px solid white;
+  border-radius: 35px;
+  position: relative;
+  overflow: hidden;
+}
+/* .phone::before {
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  transform: translate(-15px, -15px);
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 40px;
+} */
+.phone__top {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 20px 15px 0px;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.phone__top::before {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  border-bottom-right-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+  content: "";
+  background-color: white;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.phone__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 7px;
+  border: 1px solid white;
+}
+.phone__text {
+  margin-right: auto;
+}
+.phone__text--name {
+  color: hsl(276, 100%, 81%);
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.phone__text--info {
+  color: hsl(276, 100%, 81%);
+  font-size: 10px;
+}
+.phone__option {
+  color: white;
+}
+.phone__back {
+  color: white;
+}
+.phone__body {
+  padding: 10px;
+}
+.phone__receive,
+.phone__sent,
+.booking {
+  width: max-content;
+  max-width: 65%;
+  padding: 7px;
+  font-size: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.phone__receive {
+  background-color: hsl(270, 20%, 90%);
+  color: hsl(276, 55%, 52%);
+  border-bottom-left-radius: 5px;
+}
+.phone__sent {
+  background-color: white;
+  color: hsl(271, 15%, 43%);
+  border-bottom-right-radius: 5px;
+  margin-left: auto;
+}
+.phone__media {
+  display: flex;
+  /* width: 100%; */
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.phone__image {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.moreMargin {
+  margin-bottom: 15px;
+}
+.booking {
+  width: 80%;
+  max-width: unset;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  padding: 10px;
+}
+.booking__walkTime {
+  flex: 1;
+  color: white;
+  margin-left: 10px;
+}
+.booking__amount {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.booking__radio {
+  display: none;
+}
+.booking__radio--psuedo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid hsl(289, 100%, 72%);
+}
+.form {
+  border-radius: 1000px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 5px 15px;
+}
+.form__input {
+  font-size: 10px;
+  color: hsl(206, 6%, 79%);
+  flex: 1;
+  border: none;
+}
+.form__button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: hsl(271, 36%, 24%);
+}
+.word {
+}
+.word__heading {
+  margin-bottom: 20px;
+  color: hsl(271, 36%, 24%);
+  font-size: 35px;
+}
+.word__text {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.5;
+}
+.developer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+  z-index: 2000;
+}
+.developer__name:link,
+.developer__name:visited {
+  font-family: "Dancing Script", cursive;
+  color: hsl(264, 100%, 61%);
+}
+
+@media (max-width: 912px) {
+  .main {
+    grid-gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 290px 430px; */
+    grid-gap: 100px;
+  }
+  .phone {
+    margin: 0px auto;
+    width: 290px;
+  }
+  .word {
+    margin: 0px auto;
+    max-width: 480px;
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .phone {
+    width: 250px;
+  }
+}
